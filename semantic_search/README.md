@@ -36,7 +36,8 @@ Built within a fork of the official Endee repository, this project serves as a f
 1.  **Data Source:** Raw text documents (e.g., HR policies) are stored in `documents.txt`.
 2.  **Embedding Generation:** Uses `SentenceTransformer` to convert text into $n$-dimensional dense vectors.
 3.  **Vector Storage:** Embeddings and metadata are indexed within the **Endee** database.
-4.  **Semantic Search:** * The user query is embedded into the same vector space.
+4.  **Semantic Search:**
+    * The user query is embedded into the same vector space.
     * Endee performs a similarity search (Cosine Similarity).
     * The system returns the most contextually relevant documents.
 
@@ -120,19 +121,19 @@ Top Results:
 ## 🔍 Why Semantic Search?
 
 Unlike keyword-based search, semantic search:
--Understands meaning and context
--Handles synonyms and paraphrased queries
--Forms the retrieval backbone of RAG systems
+* Understands meaning and context
+* Handles synonyms and paraphrased queries
+* Forms the retrieval backbone of RAG systems
 
 This project focuses on the retrieval layer, which is the most critical component of modern AI applications.
 
 ## 🧩 Extensibility
 
 This system can be extended to:
--Retrieval-Augmented Generation (RAG)
--AI chatbots over documents
--Recommendation systems
--Agentic AI workflows
+* Retrieval-Augmented Generation (RAG)
+* AI chatbots over documents
+* Recommendation systems
+* Agentic AI workflows
 
 ## 🏁 Conclusion
 
@@ -141,3 +142,4 @@ It showcases core concepts required in industry-grade AI systems such as embeddi
 
 ## 🔗 References
 
+Endee Vector Database: https://github.com/EndeeLabs/endee
