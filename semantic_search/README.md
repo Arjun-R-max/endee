@@ -57,6 +57,8 @@ semantic_search/
 ├── main.py                   # User-friendly CLI entry point
 └── README.md                 # Project documentation
 
+```
+
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone Your Forked Repository
@@ -64,6 +66,7 @@ semantic_search/
 ```bash
 git clone https://github.com/<your-username>/endee.git
 cd endee
+```
 
 ### 2️⃣ Create Virtual Environment & Install Dependencies
 
@@ -72,12 +75,14 @@ python -m venv venv
 venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 pip install sentence-transformers
+```
 
 ### 3️⃣ Add Sample Data
 
 Edit the file:
 ```bash
 semantic_search/data/documents.txt
+```
 
 Add one document per line.
 
@@ -85,6 +90,7 @@ Add one document per line.
 
 ```bash
 python semantic_search/scripts/ingest_data.py
+```
 
 This step:
 -Converts documents into embeddings
@@ -95,18 +101,21 @@ This step:
 ```bash
 python semantic_search/scripts/semantic_search.py
 python semantic_search/main.py
+```
 
 ## 🧪 Sample Output
 Query:
 ```vbnet
 what is working hours from monday to friday?
+```
 
 Result:
 ```vbnet
-Top Relevant Documents:
+Top Results:
 1. (0.83) Working hours are from 9:30 AM to 6:30 PM, Monday to Friday.
 2. (0.45) The organization follows a hybrid work model.
 3. (0.34) Employees are entitled to annual leave.
+```
 
 ## 🔍 Why Semantic Search?
 
@@ -132,4 +141,3 @@ It showcases core concepts required in industry-grade AI systems such as embeddi
 
 ## 🔗 References
 
-Endee Vector Database: https://github.com/EndeeLabs/endee

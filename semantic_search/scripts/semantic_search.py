@@ -8,6 +8,6 @@ def main(query, top_k=3):
     query_vector = _embedder.embed_query(query)
     results = _vector_store.search(query_vector, top_k=top_k)
 
-    print("\n📄 Top Relevant Documents:")
+    print("\n📄 Top Results:")
     for idx, res in enumerate(results, start=1):
         print(f"{idx}. ({res['score']:.3f}) {res['text']}")
